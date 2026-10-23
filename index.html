@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>Emon Top-Up | Game Top-Up</title>
+<style>
+:root{--bg:#07111f;--panel:#101e31;--panel2:#14263c;--text:#f4f7fb;--muted:#a9b8ca;--green:#45f0a2;--blue:#53b8ff;--border:#263c54}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#102e42 0,#07111f 44%,#050b14 100%);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#07111feF;border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:20px}.logo{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--blue));color:#06101b;font-weight:1000;box-shadow:0 0 24px #45f0a233}
+.nav a.btn{padding:10px 14px;border-radius:12px;background:var(--green);color:#06101b;font-weight:800}
+.hero{padding:54px 0 32px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:28px}.eyebrow{color:var(--green);font-weight:800;letter-spacing:.08em;font-size:12px}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.12;margin:12px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);line-height:1.8;max-width:560px}.hero-card{background:linear-gradient(145deg,#142e42,#0b1728);border:1px solid var(--border);border-radius:28px;padding:26px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 22px 60px #0005}.diamond{font-size:68px;text-align:center;filter:drop-shadow(0 0 20px #53b8ff77)}.hero-card strong{font-size:22px}.hero-card small{color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{border:0;cursor:pointer;border-radius:12px;padding:12px 17px;font:inherit;font-weight:800;background:var(--green);color:#06101b}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--border)}
+section{padding:24px 0 38px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}.section-head h2{margin:0;font-size:27px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.product{background:linear-gradient(150deg,var(--panel),#0b1727);border:1px solid var(--border);border-radius:18px;padding:18px;transition:.2s}.product:hover{transform:translateY(-3px);border-color:#45f0a277}.product .emoji{font-size:34px}.product h3{margin:10px 0 4px}.product p{color:var(--muted);font-size:14px;min-height:40px;margin:0 0 14px}.price{font-size:21px;font-weight:900;color:var(--green);margin-bottom:14px}.product button{width:100%}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:1px solid var(--border);border-radius:16px;padding:18px;background:#0d1a2b}.step b{display:block;margin:8px 0}.step p{color:var(--muted);font-size:14px;line-height:1.6;margin-bottom:0}
+.notice{border:1px solid #a7832b66;background:#302712;color:#f7d98a;border-radius:14px;padding:14px 16px;line-height:1.65;font-size:14px}
+footer{border-top:1px solid var(--border);padding:25px 0 35px;color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:30;padding:16px;align-items:center;justify-content:center}.modal.open{display:flex}.dialog{width:min(460px,100%);background:#101e31;border:1px solid var(--border);border-radius:22px;padding:22px;max-height:92vh;overflow:auto}.dialog h2{margin-top:0}.field{display:block;margin:13px 0;color:var(--muted);font-size:14px}.field input,.field select{display:block;width:100%;margin-top:6px;border:1px solid var(--border);background:#07111f;color:var(--text);padding:12px;border-radius:10px;font:inherit}.dialog-actions{display:flex;gap:10px;margin-top:18px}.dialog-actions button{flex:1}.close{float:right;background:transparent;border:0;color:var(--text);font-size:24px;cursor:pointer}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:34px}.hero-card{min-height:190px}.grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:440px){.grid{grid-template-columns:1fr}.brand{font-size:17px}.nav a.btn{font-size:13px;padding:9px 10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#"><span class="logo">E</span><span>EMON <span style="color:var(--green)">TOP-UP</span></span></a><a class="btn" href="#products">টপ-আপ দেখুন</a></div></header>
+<main>
+<div class="wrap hero">
+ <div><div class="eyebrow">GAMING • TOP-UP • DIGITAL</div><h1>গেমিং শুরু হোক <span>আরও সহজে</span></h1><p>Emon Top-Up-এ আপনার পছন্দের গেমের প্যাকেজ দেখুন। প্যাকেজ নির্বাচন করে ডেমো অর্ডার ফর্ম পূরণ করুন। আসল অর্ডার ও পেমেন্ট চালু করতে সঠিক সেবা/পেমেন্ট ব্যবস্থা যুক্ত করতে হবে।</p><div class="actions"><a class="btn" href="#products">প্যাকেজ দেখুন ↓</a><a class="btn secondary" href="#how">কীভাবে কাজ করে?</a></div></div>
+ <div class="hero-card"><div><small>WELCOME TO</small><div class="diamond">💎</div></div><div><strong>Emon Top-Up</strong><br><small>তোমার গেম, তোমার পছন্দ</small></div></div>
+</div>
+<section id="products"><div class="wrap"><div class="section-head"><div><h2>জনপ্রিয় প্যাকেজ</h2><p>এগুলো নমুনা প্যাকেজ—আসল মূল্য ও ডেলিভারি নিশ্চিত করে আপডেট করতে হবে।</p></div></div>
+<div class="grid" id="productGrid"></div>
+</div></section>
+<section id="how"><div class="wrap"><div class="section-head"><div><h2>অর্ডার করার ধাপ</h2><p>সাইটের প্রাথমিক ডেমো ফ্লো</p></div></div>
+<div class="steps"><div class="step"><span>🎮</span><b>১. প্যাকেজ বেছে নিন</b><p>আপনার পছন্দের প্যাকেজে অর্ডার বাটনে চাপ দিন।</p></div><div class="step"><span>🧾</span><b>২. তথ্য দিন</b><p>ফর্মে Player ID ও যোগাযোগের তথ্য লিখুন।</p></div><div class="step"><span>🔒</span><b>৩. নিশ্চিতকরণ</b><p>এই ডেমো অর্ডার কোথাও পাঠায় না বা পেমেন্ট নেয় না। সার্ভার ও অনুমোদিত পেমেন্ট যুক্ত করার পর লাইভ অর্ডার চালু হবে।</p></div></div>
+</div></section>
+<section><div class="wrap"><div class="notice"><b>গুরুত্বপূর্ণ:</b> এই ওয়েবসাইটটি এখন স্ট্যাটিক ডেমো। এখানে বাস্তব পেমেন্ট, অটো ডেলিভারি, অ্যাকাউন্ট সিস্টেম বা অর্ডার সংরক্ষণ নেই। চালু করার আগে প্রকৃত প্যাকেজের মূল্য, সাপোর্ট নম্বর, পেমেন্ট নির্দেশনা এবং নিরাপদ অর্ডার ব্যাকএন্ড যুক্ত করুন। কখনো গ্রাহকের গেম পাসওয়ার্ড চাইবেন না।</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Emon Top-Up</span><span>সাপোর্ট: আপনার সাপোর্ট লিংক পরে যোগ করুন</span></div></footer>
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="dialog"><button class="close" id="closeModal" aria-label="বন্ধ করুন">×</button><h2 id="modalTitle">ডেমো অর্ডার</h2><p id="selectedProduct" style="color:var(--green)"></p><form id="orderForm"><label class="field">Player ID<input name="playerId" required maxlength="40" placeholder="আপনার Player ID"></label><label class="field">যোগাযোগের নম্বর<input name="phone" required inputmode="tel" maxlength="20" placeholder="01XXXXXXXXX"></label><label class="field">পেমেন্ট পদ্ধতি (ডেমো)<select name="payment"><option>bKash (এখনো যুক্ত হয়নি)</option><option>Nagad (এখনো যুক্ত হয়নি)</option><option>অন্যান্য (এখনো যুক্ত হয়নি)</option></select></label><div class="dialog-actions"><button type="button" class="btn secondary" id="cancelModal">বাতিল</button><button type="submit" class="btn">ডেমো অর্ডার দেখুন</button></div></form><p id="formResult" role="status" style="line-height:1.6;color:var(--muted)"></p></div></div>
+<script>
+const products=[
+ {name:"Free Fire 100 Diamonds",desc:"Free Fire ডায়মন্ড প্যাকেজ (নমুনা)",price:"৳ ৮০",emoji:"💎"},
+ {name:"Free Fire 310 Diamonds",desc:"Free Fire ডায়মন্ড প্যাকেজ (নমুনা)",price:"৳ ২৩০",emoji:"💎"},
+ {name:"Free Fire 520 Diamonds",desc:"Free Fire ডায়মন্ড প্যাকেজ (নমুনা)",price:"৳ ৩৮০",emoji:"💎"},
+ {name:"Weekly Membership",desc:"সাপ্তাহিক মেম্বারশিপ (নমুনা)",price:"৳ ১৫০",emoji:"🎟️"},
+ {name:"PUBG UC",desc:"PUBG UC প্যাকেজ (নমুনা)",price:"মূল্য যোগ করুন",emoji:"🪖"},
+ {name:"Special Offer",desc:"নিজস্ব অফার পরে যোগ করুন",price:"মূল্য যোগ করুন",emoji:"⚡"}
+];
+const grid=document.getElementById("productGrid");
+products.forEach((p,i)=>{const card=document.createElement("article");card.className="product";card.innerHTML=`<div class="emoji">${p.emoji}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price}</div><button class="btn" data-index="${i}">অর্ডার করুন</button>`;grid.appendChild(card)});
+const modal=document.getElementById("orderModal"),result=document.getElementById("formResult");
+grid.addEventListener("click",e=>{const b=e.target.closest("button[data-index]");if(!b)return;const p=products[Number(b.dataset.index)];document.getElementById("selectedProduct").textContent=p.name+" — "+p.price;result.textContent="";modal.classList.add("open")});
+function closeModal(){modal.classList.remove("open")}
+document.getElementById("closeModal").onclick=closeModal;document.getElementById("cancelModal").onclick=closeModal;modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
+document.getElementById("orderForm").addEventListener("submit",e=>{e.preventDefault();const data=new FormData(e.target);result.textContent="ডেমো সফল: "+document.getElementById("selectedProduct").textContent+". Player ID: "+data.get("playerId")+". এটি শুধু আপনার ব্রাউজারে দেখানো নমুনা—কোনো অর্ডার পাঠানো বা পেমেন্ট হয়নি।";});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
